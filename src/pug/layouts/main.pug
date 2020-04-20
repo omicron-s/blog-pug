@@ -1,0 +1,19 @@
+include ./mixins.pug
+
+block variables
+
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="css/main.css")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Exo+2:900|Montserrat:400,400i,500,700|Playfair+Display&display=swap")
+    title #{title}
+  body
+    include ./../sections/_header
+    block content
+    include ./../sections/_footer.pug  
+
+    script(src="./libs/jQuery/jquery-3.4.1.min.js")  
+    script(src="./js/main.js")  

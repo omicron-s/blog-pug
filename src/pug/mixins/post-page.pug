@@ -1,0 +1,10 @@
+mixin post-page(title, info, img, text)
+  article.post.post-page
+    h2.post__title #{title}
+
+    .post__info #{info}
+    .post__img
+      img(src="img/posts-preview/" + img, alt= title)
+    .post__content 
+      each item, index in text
+        p #{item}

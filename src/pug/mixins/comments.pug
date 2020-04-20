@@ -1,0 +1,9 @@
+mixin comments(img, name, text)
+  .comments__user
+    .comments__avatar
+      if (img) 
+        img(src="img/users/" + img, alt= name).comments__img
+        span.comments__name #{name}
+      else
+        span.comments__name #{name}
+    p.comments__post #{text}

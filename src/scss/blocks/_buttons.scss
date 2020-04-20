@@ -1,0 +1,45 @@
+.button-rounded {
+  height: 38px;
+  padding: 0 40px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #375573;
+  border: none;
+  border-radius: 19px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    background-color: lighten(#375573, 20%);
+  }
+}
+
+.button-read-more {
+  display: inline-block;
+  height: 44px;
+  padding: 0 30px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 44px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #375573;
+  border-radius: 6px;
+  transition: 0.2s ease-in;
+
+  &:hover,
+  &:focus {
+    color: #fff;
+    text-decoration: none;
+    background-color: lighten(#375573, 20%);
+  }
+}

@@ -1,0 +1,17 @@
+extends ./../layouts/main
+block variables
+  - const title = mainData.mainPageTitle;
+block content
+  .container
+    .row.justify-content-center
+      .col-9
+        - const n = 4;
+        +post-page(mainData.postsOnMainPage[n].title, mainData.postsOnMainPage[n].info, mainData.postsOnMainPage[n].img, mainData.postsOnMainPage[n].text)
+
+        include ./../sections/_form.pug
+
+        .comments
+          h3.comment__title Other comments:
+          each user in commentsData["blog0" + (n + 1)]
+            +comments(user.img, user.name, user.text)
+          +btn-read-more('back', 'index.html')

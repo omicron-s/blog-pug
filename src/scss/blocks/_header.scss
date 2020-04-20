@@ -1,0 +1,23 @@
+.header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 60px;
+  border-bottom: 1px solid #dde2e7;
+
+  &__logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+  }
+
+  &__right-search {
+    margin-right: 45px;
+  }
+}

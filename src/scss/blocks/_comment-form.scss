@@ -1,0 +1,68 @@
+.post-page {
+  border-bottom: none !important;
+}
+
+.comment {
+  display: flex;
+  flex-wrap: wrap;
+
+  // .comment__title
+  &__title {
+    margin-bottom: 15px;
+    color: #1a1a1a;
+    font-weight: 400;
+    font-size: 33px;
+    font-family: 'Playfair Display', serif;
+  }
+
+  // .comment__input
+  &__input {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    color: #4e5e66;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #e9eff2;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: 0.2s ease-in;
+
+    &:focus {
+      border: 2px solid #95bacc;
+    }
+
+    &::placeholder {
+      opacity: 50%;
+    }
+  }
+
+  // .comment__text
+  &__text {
+    width: 100%;
+    height: 230px;
+    line-height: 1.75;
+    resize: none;
+  }
+
+  // .comment__details
+  &__name {
+    width: 240px;
+    margin-right: 20px;
+  }
+
+  // .comment__email
+  &__email {
+    width: 270px;
+    margin-right: 20px;
+  }
+
+  // .comment__home
+  &__home {
+    width: 310px;
+  }
+
+  // .comment__btn
+  &__btn {
+    border: none;
+  }
+}

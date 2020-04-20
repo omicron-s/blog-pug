@@ -1,0 +1,14 @@
+.copyright {
+  padding: ((60px - 14px) / 2) 0;
+  background-color: #e8ebee;
+  // .copyright__text
+
+  &__text {
+    color: b7babe;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1;
+    letter-spacing: 0.02em;
+    text-align: center;
+  }
+}

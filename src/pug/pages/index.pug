@@ -1,0 +1,26 @@
+extends ./../layouts/main
+block variables
+  - const title = mainData.mainPageTitle;
+
+block content
+
+
+  .container
+    .row
+      .col-9
+        each post in mainData.postsOnMainPage
+          +post(post.title, post.info, post.img, post.link)
+            p #{post.text[0]}
+
+        include ./../sections/_pagination.pug
+
+      .col-3
+        +widget('Recent posts')
+          each post in mainData.postsOnMainPage
+            +post-widget(post.title, post.info, post.imgSmall, post.link)
+
+        +widget('Popular posts')
+          each post in mainData.postsOnMainPage
+            +post-widget(post.title, post.info, post.imgSmall, post.link)
+
+        include ./../sections/_widget-instagram.pug

@@ -1,0 +1,34 @@
+{
+  "footerNavLeft": [
+    {
+      "title": "Latest Posts",
+      "link": "#"
+    },
+    {
+      "title": "Popular Posts",
+      "link": "#"
+    }
+  ],
+
+  "footerNavMid": [
+    {
+      "title": "Search",
+      "link": "#"
+    },
+    {
+      "title": "Contact Information",
+      "link": "#"
+    }
+  ],
+
+  "footerNavRight": [
+    {
+      "title": "Privacy Policy",
+      "link": "#"
+    },
+    {
+      "title": "Terms of Use",
+      "link": "#"
+    }
+  ]
+}

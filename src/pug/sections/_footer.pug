@@ -1,0 +1,15 @@
+footer
+  .footer
+    .container
+      .row
+        .col-3
+          +footer-nav(footerData.footerNavLeft)
+        .col-3
+          +footer-nav(footerData.footerNavMid)
+        .col-3
+          +footer-nav(footerData.footerNavRight)
+        .col-3
+          include ./_social-icons.pug
+  .copyright
+    .container
+      .copyright__text © Copyright 2019. All rights reserved.
