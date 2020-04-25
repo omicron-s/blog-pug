@@ -14,7 +14,7 @@
 ### Тестировать локально
 
 ```
-git clone https://omicron-s.github.io/blog-pug.git
+git clone https://github.com/omicron-s/blog-pug.git
 
 ```
 
